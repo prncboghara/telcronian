@@ -6,6 +6,7 @@
 <section class="hero-section">
     @include('componets.hero')
 </section>
+
 <!-- Trusted Section -->
 <section class="trusted-section">
     @include('componets.trusted')

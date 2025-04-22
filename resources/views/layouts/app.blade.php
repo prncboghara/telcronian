@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <title>Telcorn</title>
     @vite(['resources/scss/app.scss', 'resources/js/app.js'])
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,16 +16,15 @@
 </head>
 
 <body>
-    <!-- <div> -->
-    @include('partials.header') <!-- Static -->
-    <!-- </div> -->
-    <!-- <div> -->
-    <!-- <main> -->
-    @yield('content') <!-- More dynamic content -->
-    <!-- </main> -->
-    <!-- </div> -->
-
-    @include('partials.footer') <!-- Static -->
+    
+    <!-- Header of the page -->
+    @include('partials.header')
+    
+    <!-- Content of the page -->
+    @yield('content')
+    
+    <!-- Footer of the page -->
+    @include('partials.footer')
 
 </body>
 
