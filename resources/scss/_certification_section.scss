@@ -1,0 +1,23 @@
+.certification-section {
+    margin-top: 180px;
+    
+    h1 {
+        @include base-text-style(600, 36px, 44px, 0px, $black);
+    }
+
+    p {
+        @include base-text-style(400, 20px, 30px, 0px, $text-color);
+    }
+
+    .info-section {
+        margin-top: 64px;
+        
+        .info-alart {
+            border-left: 4px solid $theme-color;
+            padding-left: 24px;
+            h5 {@include base-text-style(600, 20px, 30px, 0px, $black);}
+            p {@include base-text-style(400, 16px, 24px, 0px, $text-color);}
+            span {@include base-text-style(600, 16px, 24px, 0px, $theme-color);}
+        }
+    }
+}

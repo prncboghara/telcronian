@@ -1,0 +1,69 @@
+footer {
+    .footer-row {
+        gap: 78px;
+
+        .footer-description {
+            padding: 41px 0px;
+            font-family: Poppins;
+            @include base-sm-text-style(400, 14px);
+        }
+        
+        ul {
+            li {
+                margin-bottom: 18px;
+                color: $text-sm;
+                font-family: Poppins;
+                @include base-sm-text-style(400, 16px);
+
+            }
+        }
+
+        input.form-control {
+            padding: 14px 10px;
+            border: 1px solid $border-color;
+            background: transparent;
+
+            &:focus {
+                border-color: $border-color;
+                box-shadow: unset;
+            }
+        }
+
+        .subscribe-btn {
+            background-color: $theme-color;
+        }
+    }
+}
+
+.second-footer {
+    background-color: $footer-bg;
+    color: $text-ED;
+    font-family: Lato;
+    vertical-align: middle;
+    padding: 24px;
+
+    @include base-text-style(400, 14px, 26px, 0px, $text-ED);
+
+    .footer-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .social-wrapper {
+            display: flex;
+
+            div {
+                width: 44px;
+                height: 44px;
+                background: $theme-color;
+                border-radius: 50%;
+                text-align: center;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                margin-right: 12px;
+            }
+        }
+        
+    }
+}

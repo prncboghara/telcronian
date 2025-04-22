@@ -1,0 +1,46 @@
+// _mixins.scss
+
+/* Text */
+@mixin base-text-style(
+    $weight: 600,
+    $size: 16px,
+    $line-height: 24px,
+    $spacing: 0px,
+    $color: $text-color) 
+{
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $line-height;
+    letter-spacing: $spacing;
+    color: $color;
+    text-decoration: none;
+}
+
+@mixin base-sm-text-style(
+    $weight: 600,
+    $size: 16px,
+    $spacing: 0px) 
+{
+    font-weight: $weight;
+    font-size: $size;
+    letter-spacing: $spacing;
+}
+
+
+/* Line */
+@mixin line-before($top, $image) {
+    position: relative;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: $top;
+      left: 208px;
+      width: 100%;
+      height: 41px;
+      background-image: url($image);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+  

@@ -1,12 +1,24 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'variables';
+@import '_mixins';
+@import '_classes';
+@import '_button';
 @import '_header';
 @import '_hero';
+@import '_footer';
 @import 'responsive';
+@import '_trusted_section';
+@import '_precertification_section';
+@import '_certification_section';
+
 
 body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    // font-weight: 400;
+    font-weight: 600;
     font-style: normal;
 }
+
+// section {
+//     padding: 20px 80px;
+// }

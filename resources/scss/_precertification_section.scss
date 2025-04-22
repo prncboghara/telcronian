@@ -1,0 +1,77 @@
+.precertification-section {
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    h1 {
+        @include base-text-style(700, 44px, 100%, 0px);
+    }
+
+    p {
+        margin-top: 18px;
+        @include base-text-style(400, 18px, 24px, 0px, $text-sm);
+
+        span {
+            @include base-text-style(500, 18px, 24px, 0px, $theme-color);
+        }
+
+    }
+
+    .stepper-section {
+        display: flex;
+        align-items: center;
+        .day-1 {
+            @include line-before(35px, "../../public/assets/Vector-11.svg");
+        }
+        .day-2 {
+            @include line-before(-35px, "../../public/assets/Vector-12.svg");
+        }
+
+        .wrapper {
+            width: 414px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 80px;
+
+            .icon-wrapper {
+                border: 1px dashed $theme-color;
+                border-radius: 50%;
+                height: 74px;
+                width: 74px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .inner-wrapper {
+                    height: 50px;
+                    width: 50px;
+                    background: $theme-color;
+                    padding: 13px;
+                    border-radius: 50%;
+                }
+            }
+
+            .footer {
+                padding: 10px 35px;
+
+                h6 {
+                    text-align: center;
+                    margin-top: 25px;
+                    margin-bottom: 18px;
+                    @include base-text-style(500, 18px, 28px, 0px, $theme-color);
+                }
+
+                span {
+                    text-align: center;
+                    @include base-text-style(600, 16px, 26px, 0px, $text-md);
+                }
+
+                p {
+                    @include base-text-style(400, 16px, 26px, 0px, $text-md);
+                    margin: 0px;
+                }
+            }
+        }
+    }
+}

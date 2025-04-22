@@ -1,177 +1,45 @@
-.content-area {
-    // padding-top: 100px;
+.hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 610px;
 
+    img {padding-left: 12px;}
 
-    .hero-section {
-        // height: 610px;
+    h1 { @include base-text-style(600, 61px, 130%, 0px, $white);}
 
-        .bubble-paragraph {
-            background-color: $primary-color;
-            color: #ffffff;
-            padding: 119px 37px 120px 80px;
-            border-bottom-right-radius: 400px;
+    p {@include base-text-style(400, 20px, 27px, 0px, $white);}
 
-            h1 {
-                font-size: 61px;
-                font-weight: 600;
-            }
-
-            .paragraph {
-                margin-top: 19px;
-                word-wrap: break-word;
-            }
-
-            p {
-                font-size: 20px;
-            }
-        }
-
-        .iot-vector {
-            img {
-                width: 586px;
-                height: 383.88px;
-            }
-        }
-
-        .started-actions {
-            display: flex;
-            margin-top: 30px;
-            gap: 24px;
-
-            .start-btn,
-            .reserve-btn {
-                padding: 16px 24px;
-            }
-
-            .start-btn {
-                background-color: $background-color;
-                color: $primary-color;
-            }
-
-            .reserve-btn {
-                border: 1px solid #ffffff;
-                color: #ffffff;
-            }
-        }
+    .bg-left-half {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 51%;
+        height: 100%;
+        background-color: $theme-color;
+        z-index: 0;
+        border-bottom-right-radius: 400px;
     }
 
-    .carousel-section {
-        text-align: center;
-        background-color: $pitch-bg-color;
-        border-top-right-radius: 1000px;
-        height: 196px;
-        padding: 46px 80px;
+    .button-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin-top: 1rem;
 
-        .carousel-title {
-            margin-bottom: 24px;
+        .btn {
+            padding: 0.75rem 1.5rem;
+            @include base-text-style(600, 18px, 28px, 0px, $white);
 
-            p {
-                color: $light-text-color;
-            }
-        }
-
-        .carousel-items {
-            img {
-                height: 48px;
+            &.primary {
+                background-color: $white;
+                color: $theme-color;
             }
 
-            display: flex;
-            justify-content: center;
-            gap: 24px;
-            list-style: none;
-        }
-    }
-
-    .stepper-section {
-        padding: 80px 0;
-
-        .text-content {
-            text-align: center;
-            margin: auto;
-
-            h1 {
-                font-size: 44px;
-                font-weight: 700;
-                color: $text-color;
-            }
-
-            p {
-                font-size: 18px;
-                color: $light-text-color;
-
-                .read-more-text {
-                    color: $primary-color;
-                }
-            }
-        }
-
-        .days-stepper {
-            margin-top: 76px;
-            position: relative;
-
-            .step {
-                flex-direction: column;
-
-                .content {
-                    h5 {
-                        color: $primary-color;
-                        font-size: 18px;
-                    }
-
-                    b {
-                        color: $light-text-color;
-                    }
-
-                    p {
-                        color: $light-text-color
-                    }
-                }
-
-                .circle-shape {
-                    img {
-                        width: 22.99px;
-                        height: 20.13px;
-                    }
-
-                    background-color: $primary-color;
-                    width: 46px;
-                    height: 46px;
-                    border-radius: 50%;
-                    margin: 10px;
-                }
-
-                .dashed-border {
-                    width: 73.67px;
-                    height: 73.67px;
-                    border-radius: 50%;
-                    border: 1px dashed $primary-color !important;
-                    margin-bottom: 25px;
-                }
-
-                .wave-container {
-                    width: 100%;
-                    margin: -10px 0 10px 0;
-                    text-align: center;
-
-                    .wave-svg {
-                        width: 100px; // adjust as needed
-                        height: auto;
-                        display: inline-block;
-                    }
-                }
-            }
-
-            .wave-line {
-                top: 35px; // Adjust vertically
-                left: 0;
-                width: 100%;
-                height: 100px;
-                pointer-events: none;
-
-                svg {
-                    width: 100%;
-                    height: 100px;
-                }
+            &.outline {
+                background: transparent;
+                border: 1px solid $white;
+                color: $white;
             }
         }
     }
